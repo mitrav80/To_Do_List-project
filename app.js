@@ -52,11 +52,13 @@ function deleteCheck(e){
         });
         
     }
+
+
     //check mark
-   // console.log(classList);
-    if (item.classList[0] == "complete-btn"){
+    if (item.classList[0] === "complete-btn") {
         const todo = item.parentElement;
-        todo.classlist.toggle("Compeleted");
+        console.log(todo.classList);
+        todo.classlist.toggle("compeleted");
 
     }
 }
@@ -85,6 +87,8 @@ function deleteCheck(e){
     });
 }
 
+
+
   function saveLocalTodos(todo){
     //chek --- ialready have thing in there?
    // let todo;
@@ -109,6 +113,8 @@ function deleteCheck(e){
             todos=JSON.parse(lpcalStorage.getItem('todos'));
             
         }
+
+
         todos.foreach(function(){
             const todoDiv = document.createElement("div");
     todoDiv.classList.add("todo");
