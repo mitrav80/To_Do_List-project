@@ -54,7 +54,7 @@ form button:hover{
      color:black;
      font-size: 1.5rem;
      display: flex;
-     justify-content: space-between;
+     justify-content: flex-end;  
      align-items: center;
      transition:all 1s ease;
  }
@@ -79,6 +79,7 @@ form button:hover{
 
  .todo-item{
      padding:0rem 0.5rem;
+     
  }
  .fa-tarsh,.fa-check{
      pointer-events:none;
@@ -87,7 +88,7 @@ form button:hover{
 
  .completed{
      text-decoration: line-through;
-     opacity:0.5
+     opacity:0.5;
  }
 
 
